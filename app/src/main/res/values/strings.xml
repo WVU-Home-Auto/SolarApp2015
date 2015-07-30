@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="home_control_button_descriptor">Home Control</string>
+    <string name="health_button_descriptor">Health Monitoring</string>
+    <string name="car_charger_button_descriptor">Car Charger</string>
+    <string name="solar_panels_button_descriptor">Solar Panels</string>
+    <string name="settings_button_descriptor">Settings</string>
 </resources>

@@ -1,11 +1,13 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,42 +22,37 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="3">
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="2" />
-
-            <Button
-                android:layout_width="wrap_content"
+            <ImageButton
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button"
+                android:id="@+id/homeControlButton"
                 android:layout_weight="2"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/home_control"
+                android:scaleType="fitCenter"
+                android:background="@color/invisible"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/home_control_button_descriptor" />
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2" />
+                android:layout_weight="3" />
 
-            <Button
-                android:layout_width="wrap_content"
+            <ImageButton
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button2"
+                android:id="@+id/healthButton"
                 android:layout_weight="2"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/health"
+                android:scaleType="fitCenter"
+                android:background="@color/invisible"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/health_button_descriptor" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="2" />
         </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -64,37 +61,69 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="3" >
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="2" />
-
-            <Button
-                android:layout_width="wrap_content"
+            <ImageButton
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button3"
+                android:id="@+id/solarPanelButton"
                 android:layout_weight="2"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/solar_panel"
+                android:scaleType="fitCenter"
+                android:background="@color/invisible"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/solar_panels_button_descriptor" />
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2" />
+                android:layout_weight="3" />
 
-            <Button
-                android:layout_width="wrap_content"
+            <ImageButton
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button4"
+                android:id="@+id/carChargerButton"
                 android:layout_weight="2"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/car_charger"
+                android:scaleType="fitCenter"
+                android:background="@color/invisible"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/car_charger_button_descriptor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3" >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/settingsButton"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/settings"
+                android:scaleType="fitCenter"
+                android:background="@color/invisible"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/settings_button_descriptor" />
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2" />
+                android:layout_weight="3" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:background="@color/invisible" />
         </LinearLayout>
 
     </LinearLayout>
-</RelativeLayout>
+
