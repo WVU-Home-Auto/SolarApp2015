@@ -8,4 +8,5 @@
     <string name="car_charger_button_descriptor">Car Charger</string>
     <string name="solar_panels_button_descriptor">Solar Panels</string>
     <string name="settings_button_descriptor">Settings</string>
+    <string name="title_activity_display_temperature">Display Temperature</string>
 </resources>
