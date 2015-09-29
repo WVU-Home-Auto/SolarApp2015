@@ -1,5 +1,6 @@
 package edu.wvu.solar.solarapp;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -19,9 +20,9 @@ import org.json.JSONObject;
 import java.util.LinkedList;
 
 
-public class DisplayTemperatureActivity extends ActionBarActivity {
+public class DisplayTemperatureActivity extends Activity {
 
-    public static final String SERVER_URL = "http://192.168.0.50";
+    public static final String SERVER_URL = "http://192.168.0.104";
     public static final String DEBUG_TAG = "SolarAppDisplayActivity";
 
     @Override
@@ -35,6 +36,16 @@ public class DisplayTemperatureActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_display_temperature, menu);
         return true;
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        String startTime = "20150901T161956-0400";
+        String endTime = "20150901T162036-0400";
+        String sensorName = "indoor1";
+        RetrieveDataTask task = new RetrieveDataTask();
+        task.doInBackground(sensorName, startTime, endTime);
     }
 
     @Override
@@ -83,7 +94,9 @@ public class DisplayTemperatureActivity extends ActionBarActivity {
 
         @Override
         protected void onPostExecute(LinkedList<LogEntry> result){
-
+            for(LogEntry entry : result){
+                Log.i(DEBUG_TAG, entry.toString());
+            }
         }
     }
 }

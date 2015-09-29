@@ -60,4 +60,9 @@ public class LogEntry {
     public String getTime(){
         return time;
     }
+
+    @Override
+    public String toString(){
+        return "Temp: " + temp + " Humidity: " + humidity + " Time: " + time;
+    }
 }

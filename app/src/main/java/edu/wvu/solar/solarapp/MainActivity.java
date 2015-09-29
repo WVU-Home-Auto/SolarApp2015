@@ -57,6 +57,8 @@ public class MainActivity extends ActionBarActivity {
             Log.i(DEBUG_TAG, "SOLAR PAAAAAANELS!!!");
         }else if(id == R.id.settingsButton){
             Log.i(DEBUG_TAG, "SETTTTTTTINGS!!!");
+            Intent intent = new Intent(this, DisplayTemperatureActivity.class);
+            startActivity(intent);
         }
         //view.setVisibility(View.INVISIBLE);
     }
