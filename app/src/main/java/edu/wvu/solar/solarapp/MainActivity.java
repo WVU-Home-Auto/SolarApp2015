@@ -1,12 +1,19 @@
 package edu.wvu.solar.solarapp;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
+
+    public static final String DEBUG_TAG = "SolarAppMainActivity";
+    public static final String ALARM_DOT_COM = "com.alarm.alarmmobile.android";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +41,33 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void buttonClick(View view){
+        int id = view.getId();
+        if(id == R.id.homeControlButton){
+            Log.i(DEBUG_TAG, "HOME CONTROL!!!!!");
+            Intent intent = getPackageManager().getLaunchIntentForPackage("com.alarm.alarmmobile.android");
+            startActivity(intent);
+        }else if(id == R.id.healthButton){
+            Log.i(DEBUG_TAG, "HEEEEAAAALLLTTTHHHH!!!!!!");
+        }else if(id == R.id.carChargerButton){
+            Log.i(DEBUG_TAG, "CAR CHAAAARGER!!!");
+        }else if(id == R.id.solarPanelButton){
+            Log.i(DEBUG_TAG, "SOLAR PAAAAAANELS!!!");
+        }else if(id == R.id.settingsButton){
+            Log.i(DEBUG_TAG, "SETTTTTTTINGS!!!");
+        }
+        //view.setVisibility(View.INVISIBLE);
+    }
+
+    private boolean isPackageInstalled(String packagename, Context context) {
+        PackageManager pm = context.getPackageManager();
+        try {
+            pm.getPackageInfo(packagename, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
     }
 }
