@@ -71,7 +71,7 @@ public class DisplayTemperatureActivity extends Activity {
             String startTime = params[1];
             String endTime = params[2];
             try {
-                HttpResponse<JsonNode> response = Unirest.get(SERVER_URL + "/getdata").queryString("startTime", startTime)
+                /*HttpResponse<JsonNode> response = Unirest.get(SERVER_URL + "/getdata").queryString("startTime", startTime)
                         .queryString("endTime", endTime).queryString("sensorName", sensorName).asJson();
                 LinkedList<LogEntry> list = new LinkedList<LogEntry>();
                 JSONArray array = response.getBody().getArray();
@@ -85,11 +85,16 @@ public class DisplayTemperatureActivity extends Activity {
                         Log.e(DEBUG_TAG, "Exception: " + e.getMessage());
                     }
                 }
-                return list;
-            } catch (UnirestException e) {
+                return list;*/
+
+
+            } catch(Exception e){
+                /*catch (UnirestException e) {
                 Log.e(DEBUG_TAG, e.getMessage());
                 return new LinkedList<LogEntry>();
+                }*/
             }
+            return null;
         }
 
         @Override
