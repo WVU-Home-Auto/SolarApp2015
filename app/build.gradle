@@ -29,4 +29,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'joda-time:joda-time:2.8.2'
     compile 'com.mashape.unirest:unirest-java:1.4.7'
+    compile project(':volley')
 }
