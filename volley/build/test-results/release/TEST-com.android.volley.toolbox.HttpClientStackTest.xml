@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.android.volley.toolbox.HttpClientStackTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2015-09-29T23:30:41" hostname="Timmys-MacBook-Pro.local" time="0.069">
+  <properties/>
+  <testcase name="createDeprecatedGetRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.014"/>
+  <testcase name="createDeprecatedPostRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.006"/>
+  <testcase name="createGetRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.004"/>
+  <testcase name="createPostRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.003"/>
+  <testcase name="createPostRequestWithBody" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.004"/>
+  <testcase name="createPutRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.004"/>
+  <testcase name="createPutRequestWithBody" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.003"/>
+  <testcase name="createDeleteRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.005"/>
+  <testcase name="createHeadRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.004"/>
+  <testcase name="createOptionsRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.004"/>
+  <testcase name="createTraceRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.005"/>
+  <testcase name="createPatchRequest" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.003"/>
+  <testcase name="createPatchRequestWithBody" classname="com.android.volley.toolbox.HttpClientStackTest" time="0.004"/>
+  <system-out><![CDATA[WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

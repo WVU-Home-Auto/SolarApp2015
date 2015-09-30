@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.android.volley.toolbox.HttpHeaderParserTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2015-09-29T23:30:35" hostname="Timmys-MacBook-Pro.local" time="0.069">
+  <properties/>
+  <testcase name="parseCacheHeaders_noHeaders" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.006"/>
+  <testcase name="parseCacheHeaders_headersSet" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_etag" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_normalExpire" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.011"/>
+  <testcase name="parseCacheHeaders_expiresInPast" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_serverRelative" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_cacheControlOverridesExpires" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="testParseCacheHeaders_staleWhileRevalidate" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_cacheControlNoCache" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_cacheControlMustRevalidateNoMaxAge" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_cacheControlMustRevalidateWithMaxAge" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.004"/>
+  <testcase name="parseCacheHeaders_cacheControlMustRevalidateWithMaxAgeAndStale" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.005"/>
+  <testcase name="parseCharset" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.006"/>
+  <testcase name="parseCaseInsensitive" classname="com.android.volley.toolbox.HttpHeaderParserTest" time="0.005"/>
+  <system-out><![CDATA[WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+WARNING: No manifest file found at ./AndroidManifest.xml.Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
