@@ -13,6 +13,8 @@
         android:label="Tests for com.android.volley.test"
         android:targetPackage="com.android.volley.test" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application>
         <uses-library android:name="android.test.runner" />
     </application>

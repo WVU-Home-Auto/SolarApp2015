@@ -24,10 +24,16 @@ android {
     }
 }
 
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'joda-time:joda-time:2.8.2'
-    compile 'com.mashape.unirest:unirest-java:1.4.7'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.4'
+    //compile 'com.mashape.unirest:unirest-java:1.4.7'
     compile project(':volley')
+
 }
