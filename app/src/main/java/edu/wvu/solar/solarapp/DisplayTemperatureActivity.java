@@ -14,6 +14,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -108,10 +109,14 @@ public class DisplayTemperatureActivity extends Activity {
 
             LineDataSet tempSet = new LineDataSet(tempEntries, "Temperature (f)");
             LineDataSet humidSet = new LineDataSet(humidEntries, "Humidity (%)");
+            tempSet.setColor(R.color.icon_blue);
+            humidSet.setColor(R.color.icon_gray);
             ArrayList<LineDataSet> sets = new ArrayList<LineDataSet>();
             sets.add(tempSet);
             sets.add(humidSet);
             LineData data = new LineData(xLabels, sets);
+            Legend l = chart.getLegend();
+            l.setCustom(new int[]{R.color.icon_blue,R.color.icon_gray},new String[] {"Temperature (F)","Humidity (%)"});
             chart.setData(data);
             chart.invalidate();
 
