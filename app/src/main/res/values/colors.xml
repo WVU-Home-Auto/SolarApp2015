@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="invisible" type="color">#00000000</item>
-    <color name="icon_blue">#55688F</color>
-    <color name="icon_gray">#525156</color>
 </resources>

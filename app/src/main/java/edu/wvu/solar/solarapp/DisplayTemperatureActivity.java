@@ -2,6 +2,7 @@ package edu.wvu.solar.solarapp;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -15,6 +16,8 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -34,7 +37,7 @@ public class DisplayTemperatureActivity extends Activity {
 
     //public static final String SERVER_URL = "http://192.168.0.102:8081";
     //public static final String SERVER_URL = "http://localhost:8081";
-    public static final String SERVER_URL = "http://10.255.94.7:8081";
+    public static final String SERVER_URL = "http://52.7.115.35:8081";
     public static final String DEBUG_TAG = "SolarAppDisplayActivity";
 
     LinearLayout baseLayout;
@@ -109,15 +112,32 @@ public class DisplayTemperatureActivity extends Activity {
 
             LineDataSet tempSet = new LineDataSet(tempEntries, "Temperature (f)");
             LineDataSet humidSet = new LineDataSet(humidEntries, "Humidity (%)");
-            tempSet.setColor(R.color.icon_blue);
-            humidSet.setColor(R.color.icon_gray);
             ArrayList<LineDataSet> sets = new ArrayList<LineDataSet>();
+            //Setting colors of data lines and circles
+            tempSet.setColor(Color.RED);
+            humidSet.setColor(Color.BLUE);
+            tempSet.setCircleColor(Color.RED);
+            humidSet.setCircleColor(Color.BLUE);
             sets.add(tempSet);
             sets.add(humidSet);
+            //Turning off data labels because they overlap with y axis
             LineData data = new LineData(xLabels, sets);
+            data.setDrawValues(false);
+            //Creating a legend and giving it colors
             Legend l = chart.getLegend();
-            l.setCustom(new int[]{R.color.icon_blue,R.color.icon_gray},new String[] {"Temperature (F)","Humidity (%)"});
+            l.setCustom(new int[]{Color.RED, Color.BLUE}, new String[]{"Temperature (F)", "Humidity (%)"});
+            l.setTextColor(Color.BLACK);
+            // formatting x axis
+            XAxis xAxis = chart.getXAxis();
+            xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+            xAxis.setDrawGridLines(false);
+            xAxis.setAvoidFirstLastClipping(true);
+            // turning off right y axis
+            YAxis rightAxis = chart.getAxisRight();
+            rightAxis.setEnabled(false);
+            // settting data and setting description
             chart.setData(data);
+            chart.setDescription("");
             chart.invalidate();
 
         }
