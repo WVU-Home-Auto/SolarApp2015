@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -109,7 +110,7 @@ public class DisplayTemperatureActivity extends Activity {
                     e.printStackTrace();
                 }
             }
-
+            chart = (LineChart) findViewById(R.id.chart1);
             LineDataSet tempSet = new LineDataSet(tempEntries, "Temperature (f)");
             LineDataSet humidSet = new LineDataSet(humidEntries, "Humidity (%)");
             ArrayList<LineDataSet> sets = new ArrayList<LineDataSet>();
@@ -139,6 +140,7 @@ public class DisplayTemperatureActivity extends Activity {
             chart.setData(data);
             chart.setDescription("");
             chart.invalidate();
+
 
         }
     }
