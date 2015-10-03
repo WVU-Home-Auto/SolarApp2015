@@ -55,6 +55,8 @@ public class MainActivity extends ActionBarActivity {
             Log.i(DEBUG_TAG, "CAR CHAAAARGER!!!");
         }else if(id == R.id.solarPanelButton){
             Log.i(DEBUG_TAG, "SOLAR PAAAAAANELS!!!");
+            Intent intent = new Intent(this, PickTimeRangeActivity.class);
+            startActivity(intent);
         }else if(id == R.id.settingsButton){
             Log.i(DEBUG_TAG, "SETTTTTTTINGS!!!");
             Intent intent = new Intent(this, DisplayTemperatureActivity.class);

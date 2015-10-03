@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.wvu.solar.solarapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".PickTimeRangeActivity"
+            android:label="@string/title_activity_pick_time_range"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.wvu.solar.solarapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
